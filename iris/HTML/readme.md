@@ -10,7 +10,7 @@ This template was built at Baltimore's AF for use with their controls / systems 
 
 
 ## <a id="purpose" name="purpose">Purpose of the template</a>
- The iris_html_template.html file was built to establish standard code structure / controls across developers to help speed up collaboration and development of an iris html landing page.
+ The **iris_html_template.html** file was built to establish standard code structure / controls across developers to help speed up collaboration and development of an iris html landing page.
 
 
 ##  <a id="Using" name="Using">Using the template</a>
