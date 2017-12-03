@@ -1,0 +1,87 @@
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<title></title>
+
+	  	<!--=====|||||     Scripts to Remove on Iris  |||||=====-->
+	    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    	<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+	  	<!--=====|||||     Scripts to Remove on Iris  |||||=====-->
+
+	  	<!--=====|||||     Scripts to Stay  |||||=====-->
+	    	<script src="https://d13p2xj50zkyqm.cloudfront.net/scripts/promo_function.js"></script>
+	  	<!--=====|||||     Scripts to Stay  |||||======--> 
+
+		<!--=====  CSS ====-->
+			<link rel="stylesheet" type="text/css" href="https://d13p2xj50zkyqm.cloudfront.net/scripts/style1-1.css" />
+		<!--=====  / CSS ====-->
+
+		<!--=====     Fonts Below Here  =====-->
+
+		<!--=====     Fonts Above Here  ======-->
+
+		<style type="text/css">
+			/*----------=============  Headline  =============--------*/
+			/*----------=============  /Headline  =============--------*/
+			/*----------=============  Body  =============--------*/
+			/*----------=============  /Body  =============--------*/
+			/*----------============= Queriers  =============--------*/
+			/*----------=============  /Queries  =============--------*/
+		</style>
+	</head>
+
+	<body>
+		<div class="contentwrapper">
+			<div class="row small-12 column">
+				<!--====  Start Headline  ====-->
+
+				<!--====  End Headline  ====-->
+
+
+				<!--====  Start Body Section  ====-->
+
+				<!--====  End Body Section  ====-->
+			</div>
+			<!-- / row -->
+
+		</div>
+		<!--closing Contentwrapper -->
+
+		<!--==== 2Step ===-->
+		<div class="shadowarea">
+			<div class="signup" style="margin:0 auto;">
+				<div class="x">X</div>
+				<h3>Reserve Your Place By<br>Entering Your Email Below</h3>
+				<label>E-mail: <input type="email" name="user_email" id="emailEnter"/></label>
+				<a class="clickPop_2" href="#ORDER_FORM_LINK#" target="_blank">Click to Proceed</a>
+				<img class="image_center" src="https://placehold.it/450x150" width="95%" />
+			</div>
+		</div>
+		<!--==== 2Step ===-->
+
+		<script src="https://d2fdrq23ypws1n.cloudfront.net/reports/LFW/Turapur_0615/Turapitcher_0715/2step.js"></script>
+		<!--========= 2 step  Script =========-->
+			<script>
+				$('.clickPop_2').on('click', function (e) {
+					e.preventDefault();
+					Cookies.set('email', $('#emailEnter').val(), {
+						domain: '.agorafinancial.com'
+					});
+					window.location = $(this).attr('href');
+				});
+				$("#emailEnter").keyup(function (event) {
+					if (event.keyCode == 13) {
+						$(".clickPop_2").click();
+					}
+				});
+				var pubpromo = 'pub intials here';
+			</script>
+		<!--========= 2 step Script =========-->
+
+	</body>
+
+</html>
