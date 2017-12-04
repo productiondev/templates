@@ -1,0 +1,130 @@
+<!DOCTYPE HTML><html>
+	<head>   
+		<meta charset="utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Enter Your Discount Code</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	    <!--=====  CSS ====-->
+	        <link rel="stylesheet" type="text/css" href="https://d13p2xj50zkyqm.cloudfront.net/scripts/style1-1.css" />
+	    <!--=====  / CSS ====-->
+		
+		<style>
+			div.contentwrapper {
+				margin: 40px auto;
+				padding-bottom: 3em;
+				width: 100%;
+				max-width: 900px;
+			}
+			p.first{
+				padding-top: 1em;
+			}
+			button:hover{
+				transition:all 0.3s ease;
+				 border-bottom: solid rgb(216, 216, 216) 5px;
+			}
+			button{
+				margin: 1em auto;
+				display: block;
+				text-align: center;
+				border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+			    border-radius: 4px;
+			    border-style: solid;
+			    border-width: 1px;
+			    padding: 5px 12px 6px;
+			    font-size: 1.8em;
+			    transition:all 0.3s ease;
+			}
+			input{
+				text-align: center;
+				font-size: 1.5em;
+			}
+			h4{
+				font-size: 2rem;
+				text-align: center;
+				font-weight: bold;
+				margin-top: 1.8em;
+			}
+			#codeInput {
+				display: block;
+				width: 245px;
+				margin: 10px auto;
+			}
+			 @media screen and (min-width: 640px) {
+				.hascode{
+					border-right: solid 2px #AAAAAA;
+				}	
+			}
+		</style>
+
+
+	</head>
+
+	<body>
+		<div class="contentwrapper">
+			<div class="row small-12 column">
+				<p class="first">Thank you for your interest in <em><strong>Lifetime Income Report</strong></em>. In order to ensure you receive the best possible offer, please enter your Membership Discount Code below.</p>
+				
+				<div class="row">
+					<div class="medium-6 columns">
+						<!-- Has code -->
+						<div class="hascode">
+							<h3><span class="red">I have a</span> Membership Discount Code</h3>
+							<p>(see below how to locate yours now)</p>
+
+							<p>Yes, I want all of the special rates and benefits that come with my Membership Discount Code below:</p>
+
+							<input class="accessCode" id="codeInput" onblur="if(this.value==''){this.value='Membership Discount Code'};" onfocus="if(this.value=='Membership Discount Code'){this.value=''};" type="text" value="Membership Discount Code" />
+							<button class="accessCode" id="codeButton">Use My Code</button>
+						</div>
+						<!-- /hascode -->
+					</div>
+
+					<div class="medium-6 columns">
+						<h3><span class="red">I do not have a</span> Membership<br />
+						Discount Code</h3>
+
+						<p>I do not have a Membership Discount Code, however I still want the best available offer complete with a 100% Risk Free Guarantee...</p>
+
+						<button class="accessCode" id="nocode" style="display:block;float:none;margin:65px auto 20px auto;">Continue Without Code</button>
+					</div>
+				</div><!-- / row -->
+				
+				<h4>Locating Your Membership Discount Code:</h4>
+				<p>Your 8 digit membership access code starts with the letter &ldquo;D&rdquo;, and is located above your name and address on the lower left of your order form. (Please see example below)</p>
+				<img alt="Sample code DLIRTBW1" class="image_center" width="100%" max-width="700px" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/LIR/directmail/LIR_SecurityGlitch1117A.png"  />
+				<p class="red">* NOTE: The 8 digit discount code in the image above is only an example. Please locate your discount code above your name on the lower left of your reply form.</p>
+			</div><!-- / row small-12 -->
+		</div><!-- / contentwrapper -->
+			
+		<script type="text/javascript">
+		$(document).ready(function() {
+			var codeInput 	= $('#codeInput'),
+				codeButton 	= $('#codeButton'),
+				nocode 		= $('#nocode');
+			
+			$('#directions').hide();
+
+			codeButton.click(function() {
+				var code 		= codeInput.val();
+					errorcode 	= 'DLIRTBW3';
+					regEx 		= new RegExp('DLIRTB0[1-9]');
+					regEx2 		= new RegExp('DLIRTB1[0-9]');
+					regEx3 		= new RegExp('DLIRTB2[0-8]');
+
+					if ((regEx.test(code))||(regEx2.test(code))||(regEx3.test(code))){
+						 window.location = 'https://reports.agorafinancial.com/LIR_DM_glitch_panela_1117/' + code;
+					} else {
+					    window.location = 'https://reports.agorafinancial.com/LIR_DM_glitch_panela_1117/' + errorcode;
+					}	
+			});
+
+			nocode.click(function() {
+				window.location = '#ORDER_FORM_LINK#/' ;
+			});
+		}); 
+		</script>
+	</body>
+></html>
