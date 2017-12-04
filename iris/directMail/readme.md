@@ -7,8 +7,8 @@ This template was built at Baltimore's AF for use with their controls / systems 
 	2. Make sure the publication name is correct. The template says, Lifetime Income Report.
 	3. Replace the image at the bottom of the page with one specific to this campaign and panel. 
 	4. Update the promocode in errorcode 	= 'DLIRTBW3'; to the new error code for this panel.
-	5.  Update the regular expressions to reflect the new range of possible discount codes. 
-	6.  Replaced the url in the window.location fields to the new order form
+	5. Update the regular expressions to reflect the new range of possible discount codes. 
+	6. Replaced the url in the window.location fields to the new order form
 	7. Test with a promocode once ready to make sure there are no errors. 
 
 ## Link to example: 
