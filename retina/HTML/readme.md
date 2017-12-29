@@ -47,5 +47,5 @@ Loads the wistia library. Wistia is the service we use stream videos. This shoul
 ### '<link rel="stylesheet" type="text/css" href="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/styles/controlstyle.css" />' This is a stripped down version of the Iris style sheet. Foundation and reset classes have been removed since that is now being supplied globally by Retina. I encourage each imprent to make their own version of this style sheet. 
 
 
-## <a href="#">More Retina Notes</a>  
+## <a href="https://productiondev.github.io/templates/retina/">More Retina Notes</a>  
 
