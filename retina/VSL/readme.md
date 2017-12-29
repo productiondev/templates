@@ -1,4 +1,4 @@
-# Iris VSL (#10) Template
+# Retina VSL (#10) Template
 This template was built at Baltimore's AF for use with their controls / systems at the time of development.  
 
 
@@ -47,13 +47,15 @@ Loads the jquery library for testing jqeury locally. This should be removed on R
 ### '<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>'
 Loads the wistia library. Wistia is the service we use stream videos. This should be removed on Iris because our build populates that globally. 
 
-### ' <link rel='stylesheet' href='https://d1jkj6ikrp6h6t.cloudfront.net/wp-content/themes/retina/stylesheets/control.css' type='text/css' media='all' />' This is a style sheet that is loaded globally on Retina it has basic reset and foundation classes as well as some Retina specific styles. Remove this when uploading to Retina.
+### href="https://d1jkj6ikrp6h6t.cloudfront.net/wp-content/themes/retina/stylesheets/control.css"
+This is a style sheet that is loaded globally on Retina it has basic reset and foundation classes as well as some Retina specific styles. Remove this when uploading to Retina.
 
-### '<link rel="stylesheet" type="text/css" href="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/styles/controlstyle.css" />' This is a stripped down version of the Iris style sheet. Foundation and reset classes have been removed since that is now being supplied globally by Retina. I encourage each imprent to make their own version of this style sheet. 
+### href="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/styles/controlstyle.css"  
+This is a stripped down version of the Iris style sheet. Foundation and reset classes have been removed since that is now being supplied globally by Retina. I encourage each imprent to make their own version of this style sheet.  
 
 ### The Video Script
 This is looking for a wistia embed variable so it can add that class to the above class wistia_embed. It also has two functions that are set to trigger at different points in the video. 1) crosstime, is waiting set point (50seconds in the template) to display the button to the order form. 2) end, is waiting for the very end of the video to pop the button to the order form. This one is a fall back in case someone sets the first crosstime button pop to be longer than the videos run time. 
 
-## <a href="#">More Retina Notes</a>
+## <a href="https://productiondev.github.io/templates/retina/">More Retina Notes</a>
 
 
