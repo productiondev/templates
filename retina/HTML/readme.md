@@ -1,4 +1,4 @@
-# Iris Html (#10) Template
+# Retina Html (#10) Template
 This template was built at Baltimore's AF for use with their controls / systems at the time of development.  
 
 ## Doc Index
@@ -42,10 +42,10 @@ Loads the jquery library for testing jqeury locally. This should be removed on R
 ### '<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>'
 Loads the wistia library. Wistia is the service we use stream videos. This should be removed on Iris because our build populates that globally. 
 
-### 'href="https://d1jkj6ikrp6h6t.cloudfront.net/wp-content/themes/retina/stylesheets/control.css"'
+### href="https://d1jkj6ikrp6h6t.cloudfront.net/wp-content/themes/retina/stylesheets/control.css"
 This is a style sheet that is loaded globally on Retina it has basic reset and foundation classes as well as some Retina specific styles. Remove this when uploading to Retina.
 
-### 'href="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/styles/controlstyle.css" ' 
+### href="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/styles/controlstyle.css"  
 This is a stripped down version of the Iris style sheet. Foundation and reset classes have been removed since that is now being supplied globally by Retina. I encourage each imprent to make their own version of this style sheet. 
 
 
