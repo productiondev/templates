@@ -1,4 +1,4 @@
-# What is Retina
+# <a href="https://docs.google.com/document/d/1itiiTgrbdNu-kPmD0L63jv61kE3aVg8inu_iUTrxMxc/edit?usp=sharing">What is Retina</a>
 Retina started as a project to help with the creation of promotional pages for Agora Financial. The Retina project aims to make building a promotional page, regardless of graphical or functional complexity, an easy no code task that anyone can do. 
 
 
