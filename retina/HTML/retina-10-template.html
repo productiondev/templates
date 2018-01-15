@@ -59,14 +59,24 @@
       
       [buylink class="image_center" imgsrc="https://placehold.it/450x450?text=Family%20Shot"]
       
-      <strong>[buylink title="Subscribe Now"]</strong>
+      [buylink title="Subscribe Now" disclaimer="(You Can Review Your Order Before it's Final)"]
       
       </div><!-- / row -->
     </div><!-- / contentwrapper -->
 
     <script>
-        jQuery( document ).ready(function($) {
-          $("a.subnow").after("<p style='text-align: center;'>(You Can Review Your Order <br class='showbr'>Before it's Final)</p>");
+      jQuery( document ).ready(function($) {
+        //add the listener for when retinajs is ready
+          document.addEventListener('retinajs_ready', setiframe, false);
+            function setiframe() {
+              $('#emailEnterBtn').on('click', function () {
+                var email2step = $('#emailEnter').val();
+                $.set_iframe_cookie ('afemail', email2step, function (results) {
+                })
+              });
+
+            }
+
       });
     </script>
 
