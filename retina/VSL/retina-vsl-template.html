@@ -15,36 +15,7 @@
 
       <!--=====     Fonts Above Here  ======-->
       <style>
-        /* Headline Below Here*/
-        
-        /* Headline Above Here */ 
-          ol, ul{
-              margin-left: 4rem;
-            }
-          .video_wrapper{
-              max-height:360px;
-              max-width:640px; 
-              margin:0 auto; 
-              margin-bottom: 2em; 
-              -webkit-box-shadow: 0px 0px 26px 0px rgba(50, 50, 50, 1);
-              -moz-box-shadow: 0px 0px 26px 0px rgba(50, 50, 50, 1);
-              box-shadow: 0px 0px 26px 0px rgba(50, 50, 50, 1);
-          }
-          .video_size{
-            max-width:640px;
-            max-height:360px;
-          }
-          .vid-cta{display:none;}
-        /* Queries Below Here*/
-        @media screen and (min-width: 640px){
-          ol, ul{
-              margin-left: 10rem;
-            }
-            .showbr{
-              display: none;
-            }
-        }
-        /* Queries Above Here*/   
+
       </style>
   
   </head>
@@ -61,16 +32,8 @@
         <!--====||  End Headline  ||====-->
         
         <!--=== Video ===-->
-            <div class="wistia_responsive_wrapper video_wrapper" >
-              <div class="wistia_embed video_size videoFoam=true playbar=true fullscreenButton=false  playButton=true autoPlay=true">&nbsp;</div>
-            </div>
+         [wistiavideo videoid="ywiqd91tol" buttontitle="Subscribe Now" disclaimer="(You Can Review Your Order Before it's Final)" crosstime="2"]
           <!--=== / Video ===-->
-
-
-
-          <div class="vid-cta">
-            <strong>[buylink title="Subscribe Now"]</strong>
-          </div>
 
 
 
@@ -79,49 +42,18 @@
     </div><!-- / contentwrapper -->
 
     <script>
-        jQuery( document ).ready(function($) {
-          /* Wistia Script */
-            
-                    // add video id below
-                    var videoId = 'ywiqd91tol';
+      jQuery( document ).ready(function($) {
+        //add the listener for when retinajs is ready
+          document.addEventListener('retinajs_ready', setiframe, false);
+            function setiframe() {
+              $('#emailEnterBtn').on('click', function () {
+                var email2step = $('#emailEnter').val();
+                $.set_iframe_cookie ('afemail', email2step, function (results) {
+                })
+              });
 
+            }
 
-                    var vidClass = 'wistia_async_' + videoId;
-                    $(".wistia_embed").addClass(vidClass);
-                    window._wq = window._wq || [];
-
-                    _wq.push({ id: videoId , onReady: function(video) {
-
-                      var video = Wistia.api(videoId);
-                      var hidden =   true;
-
-                      
-                      video.bind("crosstime", 50, function() {
-                              console.log('crosstime');
-                              $('.vid-cta').show();
-                              hidden = false;
-                              return;
-                        });
-
-                        video.bind("end", function() {
-                          if ($(".read-trans.unhide").isVisible ===false){
-                            console.log('yes');
-                          }
-                           });
-                          if (hidden == true){
-                            $('.vid-cta').show();
-                            hidden = false;
-                            return;
-                          }; 
-                        });
-
-                      }
-
-                    });
-           
-          /* End Wistia Script */
-
-          $("a.subnow").after("<p style='text-align: center;'>(You Can Review Your Order <br class='showbr'>Before it's Final)</p>");
       });
     </script>
 
