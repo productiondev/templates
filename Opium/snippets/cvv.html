@@ -1,0 +1,43 @@
+
+            <@creditCardCVVSection>
+            <div class="field_wrapper">
+                             <div class="field_name">
+                             <@comment>
+                                 <div>(This will not be shown unless "Requires CVV" is checked on the effort)</div>
+                             </@comment>
+                              <span class="field_text">Card security code:</span>
+            </div>
+                             <div class="field_input">
+                             <@creditCardCVVInput />
+                             <@fieldErrorsSection>
+                                 <p class="alertMessage">
+                                     <@fieldErrors>[-- Errors will be shown here--]</@fieldErrors>
+                                 </p>
+                             </@fieldErrorsSection>
+            </div>
+                             <div class="clear"></div>
+                         </div>
+            <a id="cvv_link" href="https://www.cvvnumber.com/cvv.html" style="font-size:11px">
+            What is my CVV code?</a>
+            <div class="cvv_pop">
+            <iframe id="cvv_frame" src="https://www.cvvnumber.com/cvv.html?sdlssfj">
+             <p>Your browser does not support iframes.</p>
+            </iframe>
+            <p class="cvv_close" style="cursor:pointer;">Click here to Close the CVV Info</p>
+            </div>
+            <script>
+            $(document).ready(function () {
+             $(".cvv_pop").hide();
+             $("#cvv_link").click(function (e) {
+                 e.preventDefault();
+                 $("#cvv_frame").attr("src", $(this).attr('href'));
+                 $(".cvv_pop").fadeIn('slow');
+             });
+
+             $(".cvv_close").click(function () {
+                 $(this).parent().fadeOut("slow");
+             });
+            });
+            </script>
+            </@creditCardCVVSection>
+            
