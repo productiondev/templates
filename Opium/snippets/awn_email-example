@@ -1,0 +1,877 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+<body>
+<style type="text/css">
+a:hover {
+color: #5E8BC6 !important;
+}
+a:active {
+color: #5E8BC6 !important;
+}
+a:visited {
+color: #5E8BC6 !important;
+}
+h1 a:active {
+color: #5E8BC6 !important;
+}
+h2 a:active {
+color: #5E8BC6 !important;
+}
+h3 a:active {
+color: #5E8BC6 !important;
+}
+h4 a:active {
+color: #5E8BC6 !important;
+}
+h5 a:active {
+color: #5E8BC6 !important;
+}
+h6 a:active {
+color: #5E8BC6 !important;
+}
+h1 a:visited {
+color: #5E8BC6 !important;
+}
+h2 a:visited {
+color: #5E8BC6 !important;
+}
+h3 a:visited {
+color: #5E8BC6 !important;
+}
+h4 a:visited {
+color: #5E8BC6 !important;
+}
+h5 a:visited {
+color: #5E8BC6 !important;
+}
+h6 a:visited {
+color: #5E8BC6 !important;
+}
+table.button:hover td {
+background: #2795b6 !important;
+}
+table.button:visited td {
+background: #2795b6 !important;
+}
+table.button:active td {
+background: #2795b6 !important;
+}
+table.button:hover td a {
+color: #fff !important;
+}
+table.button:visited td a {
+color: #fff !important;
+}
+table.button:active td a {
+color: #fff !important;
+}
+table.button:hover td {
+background: #2795b6 !important;
+}
+table.tiny-button:hover td {
+background: #2795b6 !important;
+}
+table.small-button:hover td {
+background: #2795b6 !important;
+}
+table.medium-button:hover td {
+background: #2795b6 !important;
+}
+table.large-button:hover td {
+background: #2795b6 !important;
+}
+table.button:hover td a {
+color: #ffffff !important;
+}
+table.button:active td a {
+color: #ffffff !important;
+}
+table.button td a:visited {
+color: #ffffff !important;
+}
+table.tiny-button:hover td a {
+color: #ffffff !important;
+}
+table.tiny-button:active td a {
+color: #ffffff !important;
+}
+table.tiny-button td a:visited {
+color: #ffffff !important;
+}
+table.small-button:hover td a {
+color: #ffffff !important;
+}
+table.small-button:active td a {
+color: #ffffff !important;
+}
+table.small-button td a:visited {
+color: #ffffff !important;
+}
+table.medium-button:hover td a {
+color: #ffffff !important;
+}
+table.medium-button:active td a {
+color: #ffffff !important;
+}
+table.medium-button td a:visited {
+color: #ffffff !important;
+}
+table.large-button:hover td a {
+color: #ffffff !important;
+}
+table.large-button:active td a {
+color: #ffffff !important;
+}
+table.large-button td a:visited {
+color: #ffffff !important;
+}
+table.secondary:hover td {
+background: #d0d0d0 !important; color: #555;
+}
+table.secondary:hover td a {
+color: #555 !important;
+}
+table.secondary td a:visited {
+color: #555 !important;
+}
+table.secondary:active td a {
+color: #555 !important;
+}
+table.success:hover td {
+background: #187215 !important;
+}
+table.alert:hover td {
+background: #970b0e !important;
+}
+@media only screen and (max-width: 360px) {
+  .pullquote {
+    width: 100% !important;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  table[class="body"] img {
+    width: auto !important; height: auto !important;
+  }
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+  table[class="body"] .rowz {
+    width: 100% !important; display: block !important;
+  }
+  table[class="body"] .wrapper {
+    display: block !important; padding-right: 0 !important;
+  }
+  table[class="body"] .columns {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .column {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .wrapper.first .columns {
+    display: table !important;
+  }
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+  table[class="body"] table.columns td {
+    width: 100% !important;
+  }
+  table[class="body"] table.column td {
+    width: 100% !important;
+  }
+  table[class="body"] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .columns td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .column td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .columns td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .column td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .column td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] td.offset-by-one {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-two {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-three {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-four {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-five {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-six {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-seven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eight {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-nine {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-ten {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+  table[class="body"] .right-text-pad {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .text-pad-right {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .left-text-pad {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .text-pad-left {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .hide-for-small {
+    display: none !important;
+  }
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+  table[class="body"] .show-for-small {
+    display: inherit !important;
+  }
+  table[class="body"] .hide-for-desktop {
+    display: inherit !important;
+  }
+  table[class="body"] td {
+    word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;
+  }
+  table.sub-info tr td.left {
+    width: 15% !important;
+  }
+  table[class="body"] table.columns table.customer-info tr td {
+    width: 33.33333% !important;
+  }
+  table[class="body"] table.columns table.customer-info tr td.descript {
+    width: 0% !important; display: none;
+  }
+  table[class="body"] table.columns table.customer-info tr td.name {
+    border-right: 1px solid #e1e1e1;
+  }
+}
+</style>
+  <table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="center" align="center" valign="top" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;">
+        <center style="width: 100%; min-width: 580px;">
+          <span class="hiddenlead" style="color: #333333; font-family: Helvetica Neue, Helvetica, sans; font-size: 8px; text-align: center; visibility: hidden;">Thank you for joining <em>Strategic Intelligence,</em> published by Agora Financial. It's great to have you on board! </span>
+
+          <!-- Email Content -->
+          <table class="container af-main-wrapper" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; background: #ffffff; margin: 0 auto; padding: 0; border: 1px solid #333333;" bgcolor="#ffffff"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top">
+
+                <!--Masthead-->
+                <table class="rowz masthead" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="last wrapper no-padding" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top">
+                      <table class="full-width" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top">
+                            <img src="http://sites.agorafinancial.com/EMAILS/images/email-masthead-awn.png" width="580" height="135" class="masthead-image" alt="Jim Rickards Strategic Intelligence" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: 100%; max-width: 100%; float: left; clear: both; display: block;" align="left" /></td>
+                          <td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                        </tr></table></td>
+                  </tr></table><!--END Masthead--><!--Main Content--><table class="rowz" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 20px 0px 0px;" align="left" valign="top">
+                      <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="text-pad" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0px 20px 10px;" align="left" valign="top">
+                            <!--INTRO-->
+                            <p class="headline" style="font-size: 30px; line-height: 36px; font-family: 'Helvetica', 'Arial', sans-serif; padding-top: 10px; color: #1a84c2; font-weight: bold; margin: 0 0 24px;">Welcome to <em>Jim Rickards’ Strategic Intelligence!</em></p>
+
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;">Thank you for joining <em>Strategic Intelligence,</em> published by Agora Financial. It's great to have you on board!
+                              <br /><br />
+                              Within the next day you'll receive the first email in our <strong>7-Day <em>Strategic Intelligence</em> Welcome Series.</strong> Over the coming week, I'll personally guide you through exactly how to take advantage of all your subscriber-only benefits and provide you with resources on how to make your first trade.
+                              <br /><br />
+                              It’s an easy-to-follow blueprint for protecting your wealth from the coming dollar collapse…
+                              <br /><br />
+                              But to start off, remember to print this confirmation for your records. Also, take a minute to add customerservice@agorafinancial.com to your contact list so your Welcome Series emails don’t hit your junk box.
+                              <br /><br />
+                              For instructions on adding contacts <a href="http://agorafinancial.com/whitelist-us/" target="_blank" style="color: #5E8BC6; text-decoration: underline;">click here.</a>
+                              <br /><br />
+
+And don't forget to watch Your FREE Strategic Intelligence Video Series <a href="http://agorafinancial.com/jim-rickards-strategic-intelligence-video-series/">By Clicking Here</a><br /><br />
+                              Below you’ll find your username and password for our subscriber only website and everything you’ll need to get started right away. This is important information you don’t want to lose!
+                            </p>
+
+                            <!--log ins -->
+
+                                <table class="customer-info yellow" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;border:1px solid #e1e1e1;width:100%;margin-bottom:20px;background:#fcf8e3;border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; margin-bottom: 20px; background: #fcf8e3; padding: 0; border: 1px solid #e1e1e1;"
+                                    bgcolor="#fcf8e3">
+                                    <tr style="padding:0;vertical-align:top;text-align:left;vertical-align: top; text-align: left; padding: 0;" align="left">
+                                        <td style="word-break:keep-all;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;vertical-align:top;color:#222222;font-family:&quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;line-height:1.5;font-size:16px;line-height:24px;padding:0px 0px 10px;padding:10px;border-bottom:1px solid #e1e1e1;line-height:20px;border-collapse:collapse !important;vertical-align:middle !important;word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; margin: 0; padding: 10px;"
+                                            align="left" valign="middle !important">
+                                            <p style='margin:0 0 0 0;font-size:16px;line-height:24px;margin-bottom:24px;font-family:"Helvetica", "Arial", sans-serif;font-family:Arial, Helvetica, sans-serif;margin:0;font-size: 16px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; margin: 0;'>
+                                                <@selectedChoicesSection>
+                                                 <@choice id="3728737">
+<@userCredentialsSection>
+                                                Username: <strong><@username>[-- Username will be here --]</@username></strong></p>
+                                                </@userCredentialsSection>
+                                        </td>
+                                    </tr>
+                                    <tr style="padding:0;vertical-align:top;text-align:left;vertical-align: top; text-align: left; padding: 0;" align="left">
+                                        <td style="word-break:keep-all;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;vertical-align:top;color:#222222;font-family:&quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;line-height:1.5;font-size:16px;line-height:24px;padding:0px 0px 10px;padding:10px;border-bottom:1px solid #e1e1e1;line-height:20px;border-collapse:collapse !important;vertical-align:middle !important;word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; margin: 0; padding: 10px;"
+                                            align="left" valign="middle !important">
+                                            <p style='margin:0 0 0 0;font-size:16px;line-height:24px;margin-bottom:24px;font-family:"Helvetica", "Arial", sans-serif;font-family:Arial, Helvetica, sans-serif;margin:0;font-size: 16px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; margin: 0;'>
+                                               
+                                        <@userCredentialsSection>
+                                                Password: <strong><@password>[-- Password will be here --]</@password></strong></p>
+                                            </@userCredentialsSection>
+                                            </@choice>
+                                            </@selectedChoicesSection>
+                                              <@selectedChoicesSection>
+                                                 <@choice id="3728736">
+<@userCredentialsSection>
+                                                Username: <strong><@username>[-- Username will be here --]</@username></strong></p>
+                                                </@userCredentialsSection>
+                                        </td>
+                                    </tr>
+                                    <tr style="padding:0;vertical-align:top;text-align:left;vertical-align: top; text-align: left; padding: 0;" align="left">
+                                        <td style="word-break:keep-all;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;vertical-align:top;color:#222222;font-family:&quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;line-height:1.5;font-size:16px;line-height:24px;padding:0px 0px 10px;padding:10px;border-bottom:1px solid #e1e1e1;line-height:20px;border-collapse:collapse !important;vertical-align:middle !important;word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; margin: 0; padding: 10px;"
+                                            align="left" valign="middle !important">
+                                            <p style='margin:0 0 0 0;font-size:16px;line-height:24px;margin-bottom:24px;font-family:"Helvetica", "Arial", sans-serif;font-family:Arial, Helvetica, sans-serif;margin:0;font-size: 16px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; margin: 0;'>
+                                               
+                                        <@userCredentialsSection>
+                                                Password: <strong><@password>[-- Password will be here --]</@password></strong></p>
+                                            </@userCredentialsSection>
+                                            </@choice>
+                                            </@selectedChoicesSection>
+                                              <@selectedChoicesSection>
+                                                 <@choice id="3728742">
+<@userCredentialsSection>
+                                                Username: <strong><@username>[-- Username will be here --]</@username></strong></p>
+                                                </@userCredentialsSection>
+                                        </td>
+                                    </tr>
+                                    <tr style="padding:0;vertical-align:top;text-align:left;vertical-align: top; text-align: left; padding: 0;" align="left">
+                                        <td style="word-break:keep-all;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;vertical-align:top;color:#222222;font-family:&quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;line-height:1.5;font-size:16px;line-height:24px;padding:0px 0px 10px;padding:10px;border-bottom:1px solid #e1e1e1;line-height:20px;border-collapse:collapse !important;vertical-align:middle !important;word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; margin: 0; padding: 10px;"
+                                            align="left" valign="middle !important">
+                                            <p style='margin:0 0 0 0;font-size:16px;line-height:24px;margin-bottom:24px;font-family:"Helvetica", "Arial", sans-serif;font-family:Arial, Helvetica, sans-serif;margin:0;font-size: 16px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; margin: 0;'>
+                                               
+                                        <@userCredentialsSection>
+                                                Password: <strong><@password>[-- Password will be here --]</@password></strong></p>
+                                            </@userCredentialsSection>
+                                            </@choice>
+                                            </@selectedChoicesSection>
+                                        </td>
+                                    </tr>
+                                </table>
+                            <!-- log ins -->
+
+                            <!-- get started -->
+<@dependentContent id='1505580' />
+                            <!-- / get started -->
+                            
+
+                              <!--YOUR REPORTS--><p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;"> </p>
+                            <p class="subhead" style="font-size: 24px; line-height: 30px; font-family: 'Helvetica', 'Arial', sans-serif; padding-top: 0px; padding-bottom: 12px; color: #1a84c2; font-weight: bold; margin: 0 0 12px;">Your Reports</p>
+
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;">If you are to receive the Road to Ruin by mail, it will be delivered in 10 to 14 days. For immediate access click on a report below.</p>
+
+
+                     <table class="customer-info" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; margin-bottom: 20px; padding: 0; border: 1px solid #e1e1e1;">
+  
+  <tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="left" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; width: 60% !important; margin: 0; padding: 10px;" align="left" valign="middle !important">
+      <strong>The Perfect Gold Trade</strong>
+    </td>
+    <td class="right" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: right; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; margin: 0; padding: 10px;" align="right" valign="middle !important">
+      <a href="https://agorafinancial.com/wp-content/uploads/2017/01/AWN_PerfectGoldTrade.pdf" style="color: #5E8BC6; text-decoration: underline;">View Now</a>
+    </td>
+  </tr>
+    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="left" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; width: 60% !important; margin: 0; padding: 10px;" align="left" valign="middle !important">
+      <strong>The Only Way to Own
+New World Money</strong>
+    </td>
+    <td class="right" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: right; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; margin: 0; padding: 10px;" align="right" valign="middle !important">
+      <a href="https://agorafinancial.com/wp-content/uploads/2016/07/AWN_TheOnlyWayToOwn.pdf" style="color: #5E8BC6; text-decoration: underline;">View Now</a>
+    </td>
+  </tr>
+      <tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="left" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; width: 60% !important; margin: 0; padding: 10px;" align="left" valign="middle !important">
+      <strong>How to Turn $10,000 into
+a $181,000 Fortune</strong>
+    </td>
+    <td class="right" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: right; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; margin: 0; padding: 10px;" align="right" valign="middle !important">
+      <a href="https://agorafinancial.com/wp-content/uploads/2017/09/AWN_HowToTurn10000.pdf" style="color: #5E8BC6; text-decoration: underline;">View Now</a>
+    </td>
+  </tr>
+        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="left" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; width: 60% !important; margin: 0; padding: 10px;" align="left" valign="middle !important">
+      <strong>How to Get $1,000 or More a Month… </strong>
+    </td>
+    <td class="right" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: right; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; margin: 0; padding: 10px;" align="right" valign="middle !important">
+      <a href="https://agorafinancial.com/wp-content/uploads/2017/09/AWN_HowToGet1000.pdf" style="color: #5E8BC6; text-decoration: underline;">View Now</a>
+    </td>
+  </tr>
+<@choiceSpecificCopy  choiceCode= "79AR" itemNumber= "AWN" >
+        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="left" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; width: 60% !important; margin: 0; padding: 10px;" align="left" valign="middle !important">
+      <strong>50 Ticking Time Bombs to Avoid </strong>
+    </td>
+    <td class="right" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: right; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; margin: 0; padding: 10px;" align="right" valign="middle !important">
+      <a href="https://agorafinancial.com/wp-content/uploads/2015/08/OneStockToBuy03181.pdf" style="color: #5E8BC6; text-decoration: underline;">View Now</a>
+    </td>
+  </tr>
+</@choiceSpecificCopy>
+</table>
+
+
+
+                            <!--YOUR RECIEPT-->
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;"> </p>
+                            <p class="subhead" style="font-size: 24px; line-height: 30px; font-family: 'Helvetica', 'Arial', sans-serif; padding-top: 0px; padding-bottom: 12px; color: #1a84c2; font-weight: bold; margin: 0 0 12px;">Your Order Information</p>
+
+<!-- billing -->
+
+    <div class="order_confirm">
+
+
+    <@billingAddressSection>
+
+ 
+
+        <p><span class="order_detail">First Name:</span> <@firstName>[-- First Name will be here --]</@firstName></p>
+        <p><span class="order_detail">Last Name:</span> <@lastName>[-- Last Name will be here --]</@lastName></p>
+        <p><span class="order_detail">Address 1:</span> <@address1>[-- Address 1 will be here --]</@address1></p>
+        <@hideIfEmpty formComponent="order" fieldName="addressLine2">
+            <p><span class="order_detail">Address 2:</span> <@address2>[-- Address 2 will be here --]</@address2></p>
+        </@hideIfEmpty>
+        <@hideIfEmpty formComponent="order" fieldName="addressLine3">
+        </@hideIfEmpty>
+        <p><span class="order_detail">Country:</span> <@country>[-- Country will be here --]</@country></p>
+        <p><span class="order_detail">Zip/Postal Code:</span> <@postalCode>[-- Zip Code will be here --]</@postalCode></p>
+        <@selectedStateSection>
+            <p><span class="order_detail">State:</span> <@state>[-- State will be here --]</@state></p>
+        </@selectedStateSection>
+        <p><span class="order_detail">City:</span> <@city>[-- City will be here --]</@city></p>
+        <@hideIfEmpty formComponent="order" fieldName="county">
+        </@hideIfEmpty>
+        <@hideIfEmpty formComponent="order" fieldName="companyName">
+        </@hideIfEmpty>
+        <@hideIfEmpty formComponent="order" fieldName="phoneNumber">
+            <p><span class="order_detail">Phone:</span> <@phone>[-- Phone will be here --]</@phone></p>
+        </@hideIfEmpty>
+        <div class="hidethis">
+            <@hideIfEmpty formComponent="order" fieldName="faxNumber">
+                Fax:
+                <@fax>[-- Fax will be here --]</@fax>
+            </@hideIfEmpty>
+        </div>
+        <p><span class="order_detail">Email: </span><@email>[-- E-mail will be here --]</@email></p>
+
+    </@billingAddressSection>
+
+
+
+    <@shippingAddressSection>
+        <h3>Shippping Information</h3>
+
+        <p><span class="order_detail">First Name:</span> <@firstName>[-- First Name will be here --]</@firstName></p>
+        <p><span class="order_detail">Last Name:</span> <@lastName>[-- Last Name will be here --]</@lastName></p>
+        <p><span class="order_detail">Address 1:</span> <@address1>[-- Address 1 will be here --]</@address1></p>
+        <@hideIfEmpty formComponent="order" fieldName="addressLine2">
+            <p><span class="order_detail">Address 2:</span> <@address2>[-- Address 2 will be here --]</@address2></p>
+        </@hideIfEmpty>
+        <@hideIfEmpty formComponent="order" fieldName="addressLine3">
+        </@hideIfEmpty>
+        <p><span class="order_detail">Country:</span> <@country>[-- Country will be here --]</@country></p>
+        <p><span class="order_detail">Zip/Postal Code:</span> <@postalCode>[-- Zip Code will be here --]</@postalCode></p>
+        <@selectedStateSection>
+            <p><span class="order_detail">State:</span> <@state>[-- State will be here --]</@state></p>
+        </@selectedStateSection>
+        <p><span class="order_detail">City:</span> <@city>[-- City will be here --]</@city></p>
+        <@hideIfEmpty formComponent="order" fieldName="county">
+        </@hideIfEmpty>
+        <@hideIfEmpty formComponent="order" fieldName="companyName">
+        </@hideIfEmpty>
+        <@hideIfEmpty formComponent="order" fieldName="phoneNumber">
+            <p><span class="order_detail">Phone:</span> <@phone>[-- Phone will be here --]</@phone></p>
+        </@hideIfEmpty>
+        <div class="hidethis">
+            <@hideIfEmpty formComponent="order" fieldName="faxNumber">
+                Fax:
+                <@fax>[-- Fax will be here --]</@fax>
+            </@hideIfEmpty>
+        </div>
+        <p><span class="order_detail">Email: </span><@email>[-- E-mail will be here --]</@email></p>
+
+    </@shippingAddressSection>
+
+
+    <@selectedPaymentOptionSection>
+        <@paymentOption id="4011842" type="Secure Credit Card Online">
+        <div class="hidethis">
+            <@comment>- Payment Option Info if Credit Card Online -</@comment>
+            Payment Option
+            <@paymentOptionDescription>Secure Credit Card Online</@paymentOptionDescription>
+        </div>
+
+              <h3>Credit Card Information</h3>
+              <p><span class="order_detail"><@creditCardType>[-- Credit Card Type will be here --]</@creditCardType>: </span> <@creditCardNumber>[-- XXXXXXX-XX Credit Card Number will be here --]</@creditCardNumber></p>
+
+        <div class="hidethis">
+            </@paymentOption>
+            <@paymentOption id="4011843" type="Credit Card over the Phone">
+            </@paymentOption>
+            <@paymentOption id="4011844" type="Credit Card via Fax">
+            </@paymentOption>
+            <@paymentOption id="4011845" type="Bill Me">
+                    <@comment>- Payment Option Info if Bill Me -</@comment>
+                    Payment Option
+
+
+                            <@paymentOptionDescription>Bill Me</@paymentOptionDescription>
+
+
+            </@paymentOption>
+            <@paymentOption id="4011846" type="Direct Debit">
+            </@paymentOption>
+            <@paymentOption id="4011847" type="Check">
+            </@paymentOption>
+            </@selectedPaymentOptionSection>
+        </div>
+
+        <p><span class="order_detail">Order Number: </span> <@orderNumber>[-- Order Number will be here --]</@orderNumber></p>
+        <p><span class="order_detail">Promotion Code: </span> <@promoCode>[-- Promo codes will be here --]</@promoCode></p>
+
+        <h3>Your Order</h3>
+
+
+        <@selectedChoicesSection><@choice id="3728737">
+        <table class="itemOdd">
+        <tr>
+            <td class="itemCell"> </td>
+            <td class="itemCell">
+                <h3 class="itemName"><@choiceName>1 year Platinum Level <del>$99</del> for <span class="red">$79</span>  + <em>One Stock to Buy and 50 Ticking Time Bombs to Avoid</em></@choiceName></h3>
+
+                <p class="itemDescription">
+                    <@choiceDescription />
+                </p>
+                <p class="itemQuantity">Quantity:
+                    <@choiceQuantity>[-- quantity will be here --]</@choiceQuantity>
+                </p>
+                
+                <@ifSoftDescriptorExists>
+                    <p class="itemDescription"><br><strong>This is how the charge will appear on your credit card:</strong>
+                        <@softDescriptor />
+                    </p>
+                </@ifSoftDescriptorExists>
+                
+                <p class="itemPrice">
+                    <@selectedPricingOptionCurrencySymbol>[--currency symbol--]</@selectedPricingOptionCurrencySymbol>
+                    <@choiceSubtotal>[--price/line subtotal--]</@choiceSubtotal>
+                </p>
+
+                <@userCredentialsSection>
+                <p>
+                    <span class="blockLabel">Username:</span>
+                    <span class="blockData"><@username>[-- Username will be here --]</@username></span><br>
+
+                    <span class="blockLabel">Password:</span>
+                    <span class="blockData"><@password>[-- Password will be here --]</@password></span>
+                </p>
+                </@userCredentialsSection>
+
+            </td>
+        </tr>
+
+        <@selectedShippingOptionSection>
+            <tr>
+                <td class="shippingCell"></td>
+                <td class="shippingCell">
+                    <h3 class="shoppingCartShippingType"><@shippingOptionName>[-- shipping option will be here --]</@shippingOptionName></h3>
+
+                    <p class="shippingPrice">
+                        <@selectedPricingOptionCurrencySymbol>[--currency--]</@selectedPricingOptionCurrencySymbol>
+                        <@shippingSubtotal>[--shipping subtotal--]</@shippingSubtotal>
+                    </p>
+                </td>
+            </tr>
+        </@selectedShippingOptionSection>
+
+        <@taxSection>
+            <tr>
+                <td class="shippingCell"></td>
+                <td class="shippingCell">
+                    <h3 class="shoppingCartShippingType">Est. Tax</h3>
+
+                    <p class="shoppingCartShippingLocation">
+                        <@taxLocation>[-- tax location will be here--]</@taxLocation>
+                    </p>
+
+                    <p class="shippingPrice">
+                        <@taxCurrencySymbol>[--currency--]</@taxCurrencySymbol>
+                        <@taxPrice>[--price--]</@taxPrice>
+                    </p>
+                </td>
+            </tr>
+        </@taxSection>
+
+        </table>
+    </@choice><@choice id="3728736">
+        <table class="itemOdd">
+        <tr>
+            <td class="itemCell"> </td>
+            <td class="itemCell">
+                <h3 class="itemName"><@choiceName>1 year Gold Level for $89</@choiceName></h3>
+
+                <p class="itemDescription">
+                    <@choiceDescription />
+                </p>
+                <p class="itemQuantity">Quantity:
+                    <@choiceQuantity>[-- quantity will be here --]</@choiceQuantity>
+                </p>
+                
+                <@ifSoftDescriptorExists>
+                    <p class="itemDescription"><br><strong>This is how the charge will appear on your credit card:</strong>
+                        <@softDescriptor />
+                    </p>
+                </@ifSoftDescriptorExists>
+                
+                <p class="itemPrice">
+                    <@selectedPricingOptionCurrencySymbol>[--currency symbol--]</@selectedPricingOptionCurrencySymbol>
+                    <@choiceSubtotal>[--price/line subtotal--]</@choiceSubtotal>
+                </p>
+
+                <@userCredentialsSection>
+                <p>
+                    <span class="blockLabel">Username:</span>
+                    <span class="blockData"><@username>[-- Username will be here --]</@username></span><br>
+
+                    <span class="blockLabel">Password:</span>
+                    <span class="blockData"><@password>[-- Password will be here --]</@password></span>
+                </p>
+                </@userCredentialsSection>
+
+            </td>
+        </tr>
+
+        <@selectedShippingOptionSection>
+            <tr>
+                <td class="shippingCell"></td>
+                <td class="shippingCell">
+                    <h3 class="shoppingCartShippingType"><@shippingOptionName>[-- shipping option will be here --]</@shippingOptionName></h3>
+
+                    <p class="shippingPrice">
+                        <@selectedPricingOptionCurrencySymbol>[--currency--]</@selectedPricingOptionCurrencySymbol>
+                        <@shippingSubtotal>[--shipping subtotal--]</@shippingSubtotal>
+                    </p>
+                </td>
+            </tr>
+        </@selectedShippingOptionSection>
+
+        <@taxSection>
+            <tr>
+                <td class="shippingCell"></td>
+                <td class="shippingCell">
+                    <h3 class="shoppingCartShippingType">Est. Tax</h3>
+
+                    <p class="shoppingCartShippingLocation">
+                        <@taxLocation>[-- tax location will be here--]</@taxLocation>
+                    </p>
+
+                    <p class="shippingPrice">
+                        <@taxCurrencySymbol>[--currency--]</@taxCurrencySymbol>
+                        <@taxPrice>[--price--]</@taxPrice>
+                    </p>
+                </td>
+            </tr>
+        </@taxSection>
+
+        </table>
+    </@choice><@choice id="3728742">
+        <table class="itemOdd">
+        <tr>
+            <td class="itemCell"> </td>
+            <td class="itemCell">
+                <h3 class="itemName"><@choiceName>1 year Silver Level for $49</@choiceName></h3>
+
+                <p class="itemDescription">
+                    <@choiceDescription />
+                </p>
+                <p class="itemQuantity">Quantity:
+                    <@choiceQuantity>[-- quantity will be here --]</@choiceQuantity>
+                </p>
+                
+                <@ifSoftDescriptorExists>
+                    <p class="itemDescription"><br><strong>This is how the charge will appear on your credit card:</strong>
+                        <@softDescriptor />
+                    </p>
+                </@ifSoftDescriptorExists>
+                
+                <p class="itemPrice">
+                    <@selectedPricingOptionCurrencySymbol>[--currency symbol--]</@selectedPricingOptionCurrencySymbol>
+                    <@choiceSubtotal>[--price/line subtotal--]</@choiceSubtotal>
+                </p>
+
+                <@userCredentialsSection>
+                <p>
+                    <span class="blockLabel">Username:</span>
+                    <span class="blockData"><@username>[-- Username will be here --]</@username></span><br>
+
+                    <span class="blockLabel">Password:</span>
+                    <span class="blockData"><@password>[-- Password will be here --]</@password></span>
+                </p>
+                </@userCredentialsSection>
+
+            </td>
+        </tr>
+
+        <@selectedShippingOptionSection>
+            <tr>
+                <td class="shippingCell"></td>
+                <td class="shippingCell">
+                    <h3 class="shoppingCartShippingType"><@shippingOptionName>[-- shipping option will be here --]</@shippingOptionName></h3>
+
+                    <p class="shippingPrice">
+                        <@selectedPricingOptionCurrencySymbol>[--currency--]</@selectedPricingOptionCurrencySymbol>
+                        <@shippingSubtotal>[--shipping subtotal--]</@shippingSubtotal>
+                    </p>
+                </td>
+            </tr>
+        </@selectedShippingOptionSection>
+
+        <@taxSection>
+            <tr>
+                <td class="shippingCell"></td>
+                <td class="shippingCell">
+                    <h3 class="shoppingCartShippingType">Est. Tax</h3>
+
+                    <p class="shoppingCartShippingLocation">
+                        <@taxLocation>[-- tax location will be here--]</@taxLocation>
+                    </p>
+
+                    <p class="shippingPrice">
+                        <@taxCurrencySymbol>[--currency--]</@taxCurrencySymbol>
+                        <@taxPrice>[--price--]</@taxPrice>
+                    </p>
+                </td>
+            </tr>
+        </@taxSection>
+
+        </table>
+    </@choice>
+
+    
+
+
+    
+
+    
+
+        </@selectedChoicesSection>
+
+
+        <h3>Subtotal: <@orderTotalCurrencySymbol>[--currency--]</@orderTotalCurrencySymbol> <@orderTotal>[-- price--]</@orderTotal></h3>
+   
+
+<!-- / billing -->
+
+
+
+
+
+<p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;"> </p>
+                            <p class="subhead" style="font-size: 24px; line-height: 30px; font-family: 'Helvetica', 'Arial', sans-serif; padding-top: 0px; padding-bottom: 12px; color: #1a84c2; font-weight: bold; margin: 0 0 12px;">What Will My Statement Look Like?</p>
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;">Below is an example of what you will see on your credit card statement for this charge and any future charges from this publication.</p>
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;">In an effort to better serve our customers, we utilize credit and debit card preauthorization.  Occasionally, you will see an additional PENDING charge(s) on your statement until our merchant clears the transaction.  There is no need to contact us, as the pending authorization hold(s) will be <strong>automatically</strong> removed from your account within 3-5 days.</p>
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;"><img src="http://sites.agorafinancial.com/EMAILS/images/AWN_CCStatement.jpg" width="580" height="394" class="masthead-image" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: 100%; max-width: 100%;  clear: both; display: block;"  /></p>
+<!--CLOSER--><p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;"> </p>
+                            <p class="subhead" style="font-size: 24px; line-height: 30px; font-family: 'Helvetica', 'Arial', sans-serif; padding-top: 0px; padding-bottom: 12px; color: #1a84c2; font-weight: bold; margin: 0 0 12px;">Watch Your Inbox</p>
+
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;">Remember, tomorrow you'll receive the first email in my <strong>7-Day <em>Strategic Intelligence</em> Welcome Series.</strong> The subject line will read, <strong>“Getting Started with Strategic Intelligence” </strong>
+                              <br /><br />
+                              If you do nothing else today, make sure you open this email. It could mean the difference between taking action today and securing your family's future...or dragging your feet and missing out on today's hottest opportunity because you waited too long.
+                              <br /><br />
+                              I’m ready to help you get started today. Are you? Watch your inbox…</p>
+
+                            </td>
+                            <td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                          </tr></table></td>
+                    </tr></table><!--END Main Content-->
+
+
+<!-- footer -->
+<@dependentContent id='1505579' />
+<!-- / footer -->
+
+
+
+                    </td>
+              </tr></table><!-- END Email Content --></center>
+        </td>
+      </tr></table></body>
+</html>
