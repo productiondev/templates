@@ -65,7 +65,7 @@
          var t = $(this).html(event.strftime(
            '<span id="week"><span class="weekString">%-w</span> Week%!w</span> '
          + '<span id="day"><span class="dayString">%-D</span> Day%!D</span> '
-         + '<span id="hour"><span class="hourString">%H</span> Hour%!H </span>'
+         + '<span id="hour"><span class="hourString">%-H</span> Hour%!H </span>'
          + '<span id="minute"><span class="minuteString">%-M</span> Minute%!M </span>' 
          + '<span id="second"><span class="secondString">%-S</span> Second%!S</span>'))
          .on('update.countdown', 
