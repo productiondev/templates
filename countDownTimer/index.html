@@ -1,0 +1,117 @@
+
+<!DOCTYPE HTML><html>
+<head>   
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+ 	
+<title>Live Event</title>
+
+
+    <style>
+    	.center{
+    		margin: 0 auto;
+    		display: block;
+    	}
+    	.wrapper{
+    		background: #fff;
+    		padding: 20px;
+    		max-width: 900px;
+    	}
+    	#clock{
+    		font-size: 40px;
+    		text-align: center;
+    		display: block;
+    	}
+    	.pulseRed{
+    		font-weight: bold;
+    		color: #d31919;
+    	}
+    	
+    </style>
+	 
+</head>      
+<body>     
+
+<div class="wrapper center">
+	
+	<div id="timerWrap">
+		<h3>This Event Starts on<br />
+		Thursday January 3rd at 3PM EST</h3>
+
+		<h3 style="font-size:2.5em;">Time Remaining:</h3>
+
+		<div id="clock">&nbsp;</div>
+	</div>
+	
+	<div class="videowrapper" id="videowrapper" style="display:none;">
+		<img class="center" style="border-bottom: 10px solid #000;" src="https://media.giphy.com/media/l3q2zVr6cu95nF6O4/giphy.gif">
+	</div>
+
+
+</div>
+
+
+<script src="https://d13p2xj50zkyqm.cloudfront.net/scripts/countdown.js"></script>
+<script src="https://d13p2xj50zkyqm.cloudfront.net/scripts/moment.js"></script>
+<script src="https://d13p2xj50zkyqm.cloudfront.net/scripts/moment-timezone-with-data.min.js"></script>
+<script>
+  function ePop() {
+    var eventPop = moment.tz("2019-01-03 15:00", "America/New_York");
+
+
+     $('#clock').countdown(eventPop.toDate(), function(event) {
+ 
+         var t = $(this).html(event.strftime(
+           '<span id="week"><span class="weekString">%-w</span> Week%!w</span> '
+         + '<span id="day"><span class="dayString">%-D</span> Day%!D</span> '
+         + '<span id="hour"><span class="hourString">%H</span> Hour%!H </span>'
+         + '<span id="minute"><span class="minuteString">%-M</span> Minute%!M </span>' 
+         + '<span id="second"><span class="secondString">%-S</span> Second%!S</span>'))
+         .on('update.countdown', 
+         	checkZero()
+         )
+         .on(
+         	'finish.countdown', function() {
+           		$('#timerWrap').hide();
+           		$('.videowrapper').css('display','block');
+           		$(this).remove();
+           		//Keep '$(this).remove();' as fail safe
+         });
+    
+     });
+
+     function checkZero(){
+
+     	var week = parseInt($('.weekString').text());
+     	var day = parseInt($('.dayString').text());
+     	var hour = parseInt($('.hourString').text());
+     	var minute = parseInt($('.minuteString').text());
+
+     	if(week <= 0){
+     		$('#week').hide();
+     	}     	
+     	if(day <= 0){
+     		$('#day').hide();
+     	}
+     	if(hour <= 0){
+     		$('#hour').hide();
+     	}
+     	if(minute <= 0 && $('#hour').is(':hidden')){
+     		$('#minute').hide();
+     		$('#second').addClass('pulseRed');
+     	}
+
+     }//checkZero
+	
+}
+
+ePop();
+
+</script>
+         
+</div>
+  
+ 	
+</body>      
+</html>
